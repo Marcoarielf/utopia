@@ -1,0 +1,71 @@
+#portada-sitio{
+    width: calc(668px + (1221 - 668) * ((100vw - 800px) / (1640 - 800)));
+    height: 80vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    padding-top: 36vh;
+    @media (max-width: 800px){
+        padding-top: 0;
+        width: 84vw;
+    } 
+
+    .marca-fbyb{
+        position: absolute;
+        width: 186px;
+        top: 84px;
+        right: 16px;
+        @media (max-width: 800px){
+             width: calc(116px + (186 - 116) * ((100vw - 300px) / (800 - 300)));
+             top: 34px;
+        } 
+    }
+
+    >div{
+        display: flex;
+        width: 100%;
+        @media (max-width: 800px){
+            flex-wrap: wrap;
+        }
+
+        .logo-utopia{
+            width: 50%;
+            @media (max-width: 800px){
+                width: 100%;
+            }
+
+            img{
+                width: calc(188px + (406 - 188) * ((100vw - 800px) / (1640 - 800)));
+                @media (max-width: 800px){
+                    width: calc(188px + (412 - 188) * ((100vw - 300px) / (800 - 300)));
+                }
+            }
+        }
+
+        .descripcion-utopia{
+            width: 50%;
+            @media (max-width: 800px){
+                width: 100%;
+            }
+
+            h1{
+                color: #fff;
+                font-weight: 300;
+                font-style: normal;
+                font-size: calc(20px + (38 - 20) * ((100vw - 800px) / (1640 - 800)));
+                line-height: 120%;
+                padding-top: 1vh;
+                @media (max-width: 800px){
+                    font-size: calc(13px + (38 - 13) * ((100vw - 300px) / (800 - 300)));
+                    line-height: 132%;
+                }
+                br{
+                    @media (max-width: 800px){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
