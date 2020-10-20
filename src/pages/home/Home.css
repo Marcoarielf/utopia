@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("./../../fonts/circular-light.woff2") format("woff2"), url("./../../fonts/circular-light.woff") format("woff");
+  font-weight: 300;
+  font-style: light;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("./../../fonts/circular-book.woff2") format("woff2"), url("./../../fonts/circular-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("./../../fonts/circular-medium.woff2") format("woff2"), url("./../../fonts/circular-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("./../../fonts/circular-bold.woff2") format("woff2"), url("./../../fonts/circular-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("./../../fonts/circular-black.woff2") format("woff2"), url("./../../fonts/circular-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body, h1, h2, h3, h4, p, a {
+  font-family: 'Circular',Helvetica;
+}
+
+body {
+  background-color: #101010;
+}
+/*# sourceMappingURL=App.css.map */

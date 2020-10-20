@@ -6,8 +6,8 @@ function Nav() {
   return (
         <header className="hportada">
             <div>
-                <img src={logoUtopia} />
-                <p>espacio cenit</p>
+                <img class="logo-utopia" src={logoUtopia} alt="lgoo"/>
+                <p class="btn-espacio-cenit">espacio cenit</p>
                 <div id="abrir-menu">
                     <span className="line-menu-1 line-menu-animation"></span>
                     <span className="line-menu-2 line-menu-animation"></span>

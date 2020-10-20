@@ -1,7 +1,7 @@
-* {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*
+{
+    margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -39,15 +39,11 @@
   font-style: normal;
 }
 
-body, h1, h2, h3, h4, p, a {
-  font-family: 'Circular',Helvetica;
+body,h1,h2,h3,h4,p,a
+{
+    font-family: 'Circular',Helvetica;
 }
 
-body#home, body#pensar, body#crear, body#vivir {
+body{
   background-color: #101010;
 }
-
-body#contenido {
-  background-color: #fff;
-}
-/*# sourceMappingURL=App.css.map */

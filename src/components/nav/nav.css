@@ -13,11 +13,11 @@ header.hportada {
 }
 
 header.hportada > div .logo-utopia {
-  opacity: 0;
+  opacity: 1;
 }
 
 header.hportada > div #abrir-menu span {
-  width: 0%;
+  width: 100%;
 }
 
 header > div {
@@ -55,7 +55,7 @@ header > div .btn-espacio-cenit {
   text-decoration: none;
   font-size: 16px;
   border-bottom: 1px solid #000000;
-  opacity: 0;
+  opacity: 1;
 }
 
 header > div .btn-espacio-cenit:hover {
@@ -82,7 +82,7 @@ header > div #btn-espacio-cenit {
   border: 2px solid #fff;
   -webkit-transform: scale(0);
           transform: scale(0);
-  opacity: 0;
+  opacity: 1;
 }
 
 header > div #btn-espacio-cenit .circulo {

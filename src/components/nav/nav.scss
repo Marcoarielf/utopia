@@ -10,11 +10,11 @@ header{
         top: 0px;
         >div{
             .logo-utopia{
-                opacity: 0;
+                opacity: 1;
             }
             #abrir-menu{
                 span{
-                    width: 0%;                               
+                    width: 100%;                               
                 }
             }
         }
@@ -50,7 +50,7 @@ header{
             text-decoration: none;
             font-size: 16px;
             border-bottom: 1px solid #000000;
-            opacity: 0;
+            opacity: 1;
             &:hover{
                 border-bottom: 1px solid #0d9dd8;
             }
@@ -69,7 +69,7 @@ header{
             border-radius: 50%;
             border: 2px solid #fff;
             transform: scale(0);
-            opacity: 0;
+            opacity: 1;
             .circulo{
                 background-color: #fff;
                 width: 20%;
