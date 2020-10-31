@@ -1,0 +1,89 @@
+.acceso-contenido{
+    opacity: 0;
+    display: grid;
+    grid-template-areas: 'thumb titulo';
+    grid-template-columns: calc(400px + (950 - 400) * ((100vw - 800px) / (1640 - 800))) calc(350px + (480 - 350) * ((100vw - 800px) / (1640 - 800)));
+    margin-bottom: 10%;
+    transform: translate(0px, 20%);
+
+    @media (max-width: 800px){
+        grid-template-areas: 'thumb' 'titulo';
+        grid-template-columns: 100%;
+    }
+
+    &:nth-child(2n){
+        grid-template-areas: 'titulo thumb';
+        grid-template-columns: calc(350px + (480 - 350) * ((100vw - 800px) / (1640 - 800))) calc(400px + (950 - 400) * ((100vw - 800px) / (1640 - 800)));
+        justify-content: right;
+        @media (max-width: 800px){
+            grid-template-areas: 'thumb' 'titulo';
+            grid-template-columns: 100%;
+        }
+        .titulo{
+            padding-right: 42px;
+            @media (max-width: 800px){
+                padding-right: 0;
+            }
+        }
+    }
+    
+    &:hover{
+        .img-thumb{
+            img{
+                transform: scale(1.1);
+                transition: all 0.6s ease;
+            }
+        }
+    }
+
+    .img-thumb{
+        grid-area: thumb;
+        overflow: hidden;
+        @media (max-width: 800px){
+            margin-bottom: 4%;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            transform: scale(1.02);
+            transition: all 0.6s ease;
+        }
+    }
+
+    .titulo{
+        grid-area: titulo;
+        padding-left: 42px;
+        @media (max-width: 800px){
+            padding-left: 0;
+            padding-bottom: 12%;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+        }
+
+        h4{
+        width: 420px;
+        font-size: calc(24px + (38 - 24) * ((100vw - 800px) / (1640 - 800)));
+        line-height: 120%;
+        font-weight: 400;
+        color: rgba(255,255,255,0.9);
+        display: initial;
+        @media (max-width: 800px){
+            font-size: calc(14px + (41 - 14) * ((100vw - 300px) / (800 - 300)));
+        }           
+        }
+
+        a{
+            background-color: rgba(255,255,255,0.1);
+            background-image: url(img/mas_icon.svg);
+            display: block;
+            width: calc(40px + (60 - 40) * ((100vw - 800px) / (1640 - 800)));
+            height: calc(40px + (60 - 40) * ((100vw - 800px) / (1640 - 800)));
+            margin-top: 8%;
+            border-radius: 50%;
+            @media (max-width: 800px){
+                width: calc(40px + (60 - 40) * ((100vw - 300px) / (800 - 300)));
+                height: calc(40px + (60 - 40) * ((100vw - 300px) / (800 - 300)));
+            }                
+        }
+    }
+}

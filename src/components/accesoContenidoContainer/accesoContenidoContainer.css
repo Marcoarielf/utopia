@@ -1,0 +1,10 @@
+.contenidos {
+  margin: 0 2vw 2vw 2vw;
+}
+
+@media (max-width: 800px) {
+  .contenidos {
+    margin: 0 8vw 0 8vw;
+  }
+}
+/*# sourceMappingURL=accesoContenidoContainer.css.map */

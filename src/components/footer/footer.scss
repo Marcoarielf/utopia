@@ -1,0 +1,35 @@
+footer{
+    background-color: #101010;
+    
+    div{
+        width: calc(668px + (1221 - 668) * ((100vw - 800px) / (1640 - 800)));
+        padding: 22px 0 32px 0;
+        margin: 0 auto 0 auto;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        @media (max-width: 800px){
+            width: 84vw;
+        }
+        
+        .marca-fbyb{
+            width: 176px;
+            height: auto;
+            opacity: 0.6;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        
+        p{
+            font-size: 13.5px;
+            line-height: 146%;
+            color: rgba(255,255,255,0.3);
+            span{
+                color: rgba(255,255,255,0.6);
+            }
+        }
+    }
+}
