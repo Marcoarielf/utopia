@@ -81,7 +81,7 @@
   color: #fff;
   font-weight: 300;
   font-style: normal;
-  font-size: calc(20px + (38 - 20) * ((100vw - 800px) / (1640 - 800)));
+  font-size: calc(20px + (37 - 20) * ((100vw - 800px) / (1640 - 800)));
   line-height: 120%;
   padding-top: 1vh;
 }
