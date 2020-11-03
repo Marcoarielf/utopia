@@ -10,32 +10,10 @@ import Footer from './../../components/footer/footer'
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
 
-  const animatedPortadaSitio = React.useRef(null);
-
-  // useEffect(() => {
-    
-  //   gsap.to(animatedPortadaSitio.current, {
-  //     duration:3,
-  //     y: "-20vh",
-  //     // ease: "none",
-  //     opacity: 0,
-  //     // stagger: 1,
-  //     // scrollTrigger:{
-  //     //     // scroller: ".containerScroll",
-  //     //     trigger: '.portada',
-  //     //     start: '70% center',
-  //     //     end: '110% center',
-  //     //     markers:true,     
-  //     //     scrub: 1,
-  //     //     toggleActions: 'restart pause reverse reset'
-  //     // }
-  // })
-  // }, [animatedPortadaSitio])
-
   return (
     <div>
       
-        <Header ref={animatedPortadaSitio} />
+        <Header />
         <Tecnologias />
         <Dimensiones />
         <AccesoContenidoContainer />

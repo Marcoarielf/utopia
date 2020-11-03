@@ -1,0 +1,48 @@
+#portada-contenido{
+    background-image: url(../../images/contenido_impresion_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 6%;
+    
+    &.c-ra{
+        background-image: url(../../images/contenido_demo_5.jpg);
+    }
+   
+   &>div{
+       background-color: rgba(0,0,0,0.6);
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       flex-direction: column;
+       
+       h2{
+           width: calc(668px + (1221 - 668) * ((100vw - 800px) / (1640 - 800)));
+           font-size: calc(64px + (98 - 64) * ((100vw - 800px) / (1640 - 800)));
+           line-height: 106%;
+           color: #fff;
+           margin-bottom: calc(44px + (64 - 44) * ((100vw - 800px) / (1640 - 800)));
+           @media (max-width: 800px){
+               width: 84vw;
+           } 
+       }
+       
+       .links-dim-tec{
+           a{
+               font-size: calc(14px + (18 - 14) * ((100vw - 800px) / (1640 - 800)));
+               line-height: 100%;
+               font-weight: 400;
+               color: #fff;
+               text-decoration: none;
+               margin: 0 10px 0 10px;
+               border-bottom: 1px solid rgba(255,255,255,0.5);
+           }
+       }
+   }
+   
+}

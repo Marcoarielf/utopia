@@ -6,7 +6,7 @@
       -ms-flex-align: start;
           align-items: start;
   margin: 0 2vw 16% 2vw;
-  opacity: 1;
+  opacity: 0;
   position: relative;
   -webkit-transform: translate(0px, 20vh);
           transform: translate(0px, 20vh);
@@ -398,5 +398,49 @@
   z-index: 5;
   -webkit-transform: rotateY(138deg) rotateX(60deg);
           transform: rotateY(138deg) rotateX(60deg);
+}
+
+@-webkit-keyframes animapunto {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes animapunto {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes animacubo {
+  from {
+    -webkit-transform: rotateY(138deg) rotateX(112deg) rotateZ(116deg);
+            transform: rotateY(138deg) rotateX(112deg) rotateZ(116deg);
+  }
+  to {
+    -webkit-transform: rotateY(13deg) rotateX(11deg) rotateZ(11deg);
+            transform: rotateY(13deg) rotateX(11deg) rotateZ(11deg);
+  }
+}
+
+@keyframes animacubo {
+  from {
+    -webkit-transform: rotateY(138deg) rotateX(112deg) rotateZ(116deg);
+            transform: rotateY(138deg) rotateX(112deg) rotateZ(116deg);
+  }
+  to {
+    -webkit-transform: rotateY(13deg) rotateX(11deg) rotateZ(11deg);
+            transform: rotateY(13deg) rotateX(11deg) rotateZ(11deg);
+  }
 }
 /*# sourceMappingURL=dimensiones.css.map */

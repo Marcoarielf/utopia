@@ -2,7 +2,7 @@
     display: flex;
     align-items: start;
     margin: 0 2vw 16% 2vw;
-    opacity: 1;
+    opacity: 0;
     position: relative;
     transform: translate(0px, 20vh);
     @media (max-width: 800px){
@@ -279,4 +279,24 @@
         }
     }
 }   
+}
+
+@keyframes animapunto {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animacubo {
+    from {
+        transform: rotateY(138deg) rotateX(112deg) rotateZ(116deg);
+    }
+
+    to {
+        transform: rotateY(13deg) rotateX(11deg) rotateZ(11deg);
+    }
 }

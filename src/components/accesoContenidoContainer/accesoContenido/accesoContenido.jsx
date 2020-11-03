@@ -1,5 +1,11 @@
 import React from 'react';
 import './accesoContenido.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function AccesoContenido(props) {
   return (
@@ -9,7 +15,9 @@ function AccesoContenido(props) {
         </div>
         <div className="titulo">
             <h4>{props.description}
-                <a href="contenido-ra.html" target="_parent"></a>
+                <Link to={props.link}>
+                <a target="_parent"></a>
+                </Link>
             </h4> 
             <p>{props.description2}</p>
         </div>

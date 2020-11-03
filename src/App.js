@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import Nav from './components/nav/nav'
 import Home from './pages/home/Home'
 import Crear from './pages/crear/crear'
+import ContenidoImpresion3d from './pages/contenidoImpresion3d/contenidoImpresion3d'
 import {
     BrowserRouter as Router,
     Switch,
@@ -63,9 +64,12 @@ function App() {
                 <Route exact path="/">
                         <Home />
                 </Route>
-                <Route path="crear">
+                <Route path="/crear">
                         <Crear />
-            </Route>
+                </Route>
+                <Route path="/contenido-impresion3d">
+                        <ContenidoImpresion3d />
+                </Route>
           </div>
         </switch>
     </Router>
